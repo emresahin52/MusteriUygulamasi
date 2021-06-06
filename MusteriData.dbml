@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Musteri" Class="MusteriDataDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=Musteri;User ID=sa" SettingsObjectName="MUSTERIAPPS.Properties.Settings" SettingsPropertyName="MusteriConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Kimlik" Member="Kimliks">
+    <Type Name="Kimlik">
+      <Column Name="MusteriId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MusteriNo" Type="System.String" DbType="NVarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="FirmaBilgisi" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="YetkiliAdi" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="YetkiliSoyadi" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="FirmaAdresi" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="TelefonNo" Type="System.String" DbType="NVarChar(11) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UrunlerSil" Member="UrunlerSils">
+    <Type Name="UrunlerSil">
+      <Column Name="UrunId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UrunKodu" Type="System.String" DbType="NVarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="UrunTanimi" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="UrunMiktari" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AlisFiyati" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="SatisFiyati" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KimlikSil" Member="KimlikSils">
+    <Type Name="KimlikSil">
+      <Column Name="MusteriId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MusteriNo" Type="System.String" DbType="NVarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="FirmaBilgisi" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="YetkiliAdi" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="YetkiliSoyadi" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="FirmaAdresi" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="TelefonNo" Type="System.String" DbType="NVarChar(11) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Kullanici" Member="Kullanicis">
+    <Type Name="Kullanici">
+      <Column Name="KullaniciId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="KullaniciAdi" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="KullaniciSifresi" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="KullaniciYetkisi" Type="System.String" DbType="NVarChar(12) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Odeme" Member="Odemes">
+    <Type Name="Odeme">
+      <Column Name="OdemeTuru" Type="System.String" DbType="NVarChar(12) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Satislar" Member="Satislars">
+    <Type Name="Satislar">
+      <Column Name="SatisId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MusteriNo" Type="System.String" DbType="NVarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="FirmaBilgisi" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="UrunKodu" Type="System.String" DbType="NVarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="UrunTanimi" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="SatisMiktari" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SatisTutari" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="OdemeTuru" Type="System.String" DbType="NVarChar(12) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SatislarSil" Member="SatislarSils">
+    <Type Name="SatislarSil">
+      <Column Name="SatisId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MusteriNo" Type="System.String" DbType="NVarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="FirmaBilgisi" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="UrunKodu" Type="System.String" DbType="NVarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="UrunTanimi" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="SatisMiktari" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SatisTutari" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="OdemeTuru" Type="System.String" DbType="NVarChar(12) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.StokHareket" Member="StokHarekets">
+    <Type Name="StokHareket">
+      <Column Name="StokHareketId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UrunKodu" Type="System.String" DbType="NVarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="IslemTarihi" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="AlinanMiktar" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AlisFiyati" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="AlisTutari" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.StokHareketSil" Member="StokHareketSils">
+    <Type Name="StokHareketSil">
+      <Column Name="StokHareketId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UrunKodu" Type="System.String" DbType="NVarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="IslemTarihi" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="AlinanMiktar" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AlisFiyati" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="AlisTutari" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Urunler" Member="Urunlers">
+    <Type Name="Urunler">
+      <Column Name="UrunId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UrunKodu" Type="System.String" DbType="NVarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="UrunTanimi" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="UrunMiktari" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AlisFiyati" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="SatisFiyati" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

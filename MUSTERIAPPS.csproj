@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{83CFE441-CEA7-4536-8616-1C1063336C12}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MUSTERIAPPS</RootNamespace>
+    <AssemblyName>MUSTERIAPPS</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global_Degisken.cs" />
+    <Compile Include="MusteriData.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MusteriData.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriEkleForm.Designer.cs">
+      <DependentUpon>MusteriEkleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriGirisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriGirisForm.Designer.cs">
+      <DependentUpon>MusteriGirisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriGuncelleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriGuncelleForm.Designer.cs">
+      <DependentUpon>MusteriGuncelleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriHareketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriHareketForm.Designer.cs">
+      <DependentUpon>MusteriHareketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriAnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriAnaForm.Designer.cs">
+      <DependentUpon>MusteriAnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RaporForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporForm.Designer.cs">
+      <DependentUpon>RaporForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriSatisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriSatisForm.Designer.cs">
+      <DependentUpon>MusteriSatisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UrunStokGuncelleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunStokGuncelleForm.Designer.cs">
+      <DependentUpon>UrunStokGuncelleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrunStokHareketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunStokHareketForm.Designer.cs">
+      <DependentUpon>UrunStokHareketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrunTanimlaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunTanimlaForm.Designer.cs">
+      <DependentUpon>UrunTanimlaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VtAdres.cs" />
+    <Compile Include="VtIslem.cs" />
+    <Compile Include="YeniKullaniciForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YeniKullaniciForm.Designer.cs">
+      <DependentUpon>YeniKullaniciForm.cs</DependentUpon>
+    </Compile>
+    <None Include="MusteriData.dbml.layout">
+      <DependentUpon>MusteriData.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="MusteriEkleForm.resx">
+      <DependentUpon>MusteriEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriGirisForm.resx">
+      <DependentUpon>MusteriGirisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriGuncelleForm.resx">
+      <DependentUpon>MusteriGuncelleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriHareketForm.resx">
+      <DependentUpon>MusteriHareketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriAnaForm.resx">
+      <DependentUpon>MusteriAnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporForm.resx">
+      <DependentUpon>RaporForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriSatisForm.resx">
+      <DependentUpon>MusteriSatisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunStokGuncelleForm.resx">
+      <DependentUpon>UrunStokGuncelleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunStokHareketForm.resx">
+      <DependentUpon>UrunStokHareketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunTanimlaForm.resx">
+      <DependentUpon>UrunTanimlaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YeniKullaniciForm.resx">
+      <DependentUpon>YeniKullaniciForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MusteriData.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>MusteriData.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\anaform.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\GOZAT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\guncel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\kapat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\kaydet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\musteri.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\musteri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\onay.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\satis.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\satis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\satisk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\urun.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\urun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\urun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\urun2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\urunk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\urunk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\ürün-fiyat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\zoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\gorev.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\guncel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\guncel_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\guncel2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\onay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\rapor_musteri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\rapor_urun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\urun-fiyat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\ikon_musteri.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\ikon_satis.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\ikon_urun.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\ekle_musteri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\ekle_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\images\ekle_urun.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

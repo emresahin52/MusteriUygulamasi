@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12, 9.375" name="MusteriData">
+  <DataContextMoniker Name="/MusteriDataDataContext" />
+  <nestedChildShapes>
+    <classShape Id="4c5c4429-1f20-4902-905a-82987a327885" absoluteBounds="0.75, 0.75, 2, 2.1770587042967477">
+      <DataClassMoniker Name="/MusteriDataDataContext/Kimlik" />
+      <nestedChildShapes>
+        <elementListCompartment Id="201eb933-9424-443b-8576-f395c86cd48e" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.6170587042967477" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0bf6d408-7196-4329-9e9d-ec8e8de3c3bb" absoluteBounds="3.75, 0.75, 2, 1.982220915555954">
+      <DataClassMoniker Name="/MusteriDataDataContext/UrunlerSil" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9bfc3899-10c7-4baf-af49-b9f40ce68ce9" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.422220915555954" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7257eca2-8850-495d-82c1-b206a8dba7a1" absoluteBounds="0.75, 3.75, 2, 2.1770587042967477">
+      <DataClassMoniker Name="/MusteriDataDataContext/KimlikSil" />
+      <nestedChildShapes>
+        <elementListCompartment Id="51829a3c-6c88-457b-941d-6c96283ed295" absoluteBounds="0.765, 4.21, 1.9700000000000002, 1.6170587042967477" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="86448abd-053a-4743-b715-a1bcfc21ec7a" absoluteBounds="3.75, 3.75, 2, 1.5925453380743662">
+      <DataClassMoniker Name="/MusteriDataDataContext/Kullanici" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8eb63806-3073-40c9-9331-5d3986c3e8c8" absoluteBounds="3.765, 4.21, 1.9700000000000002, 1.0325453380743661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="76e2b954-a885-433c-baa2-4a1c02957e20" absoluteBounds="6.75, 0.75, 2, 1.0080319718519846">
+      <DataClassMoniker Name="/MusteriDataDataContext/Odeme" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cace1703-7b07-48c4-ba2b-056bc2a43e5c" absoluteBounds="6.765, 1.21, 1.9700000000000002, 0.44803197185198468" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9e15b676-a705-4410-87b7-0de17df4ee43" absoluteBounds="0.75, 6.75, 2, 2.3718964930375428">
+      <DataClassMoniker Name="/MusteriDataDataContext/Satislar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="498b00b8-e614-4cbd-b8f6-550259bb4de0" absoluteBounds="0.765, 7.21, 1.9700000000000002, 1.8118964930375419" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bcd4178f-1756-40c0-86e4-e07a27ba2769" absoluteBounds="6.75, 2.75, 2, 2.3718964930375424">
+      <DataClassMoniker Name="/MusteriDataDataContext/SatislarSil" />
+      <nestedChildShapes>
+        <elementListCompartment Id="59d8dc13-67cc-4d80-8289-e43fbea3f1e2" absoluteBounds="6.765, 3.21, 1.9700000000000002, 1.8118964930375419" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5b6be893-1abc-4ca7-8af0-e77b73743380" absoluteBounds="3.75, 6.75, 2, 1.9822209155559545">
+      <DataClassMoniker Name="/MusteriDataDataContext/StokHareket" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0bcb1ef5-6ae5-4d6f-b149-baf9d862e89f" absoluteBounds="3.765, 7.21, 1.9700000000000002, 1.422220915555954" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="862ca969-ee86-402a-8805-606ddc6b8036" absoluteBounds="6.75, 6.75, 2, 1.9822209155559545">
+      <DataClassMoniker Name="/MusteriDataDataContext/StokHareketSil" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ecd8cf2f-3fd7-4bff-8392-51deb3ebd91c" absoluteBounds="6.765, 7.21, 1.9700000000000002, 1.422220915555954" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1aa5fe84-7757-4ca0-a6eb-2516cd6794dc" absoluteBounds="9.75, 0.75, 2, 1.9822209155559543">
+      <DataClassMoniker Name="/MusteriDataDataContext/Urunler" />
+      <nestedChildShapes>
+        <elementListCompartment Id="de11f080-4221-4eb9-be6e-10f2d33b1b79" absoluteBounds="9.765, 1.21, 1.9700000000000002, 1.422220915555954" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
